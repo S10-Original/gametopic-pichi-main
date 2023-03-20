@@ -1,0 +1,117 @@
+body{
+    font-family: "PT Sans";
+    background-color: rgb(231, 231, 231);
+}
+p{
+    margin-left: 3px;
+    /*border: 1px solid   black;*/
+}
+
+.game-image{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    /*border: 1px solid green; */
+}
+
+
+
+#primary-container{
+
+  /* Contenedor principal del grid */
+
+    background-color: white;
+    box-shadow: 0px 1px 5px 0.5px black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 20px;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.second{
+
+/* Contenedor particular de cada juego */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 150px;
+    min-width: 100px;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0px 1px 5px 0.5px black;
+    position: relative
+}
+
+.BotonSinBorde{
+   /*esto es para quitarle el borde gris a los componentes de los juegos, porque los estoy declarando como botones para hacerlos interactivos (Sten) */
+  padding: 0;
+  border: none;
+  background: none;
+  }
+
+/* Ajuste de las dimensiones */
+
+@media (min-width: 300px){
+    #primary-container{
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+
+    }
+  }
+  @media (min-width: 800px) {
+    #primary-container{
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+  }
+  @media (min-width: 1200px) {
+    #primary-container{
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+  }
+
+#game-name{
+  /* Estilos del nombre del juego */
+
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+#game-tag{
+    /* Estilos de los tags del juego */
+
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+#game-contr{
+
+    /* Estilos de las contribuciones del juego */
+
+    font-weight: bold;
+    background-color:rgb(231, 24, 24);
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    color: white;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    right: 7px;
+    top: 7px;
+
+}
+
+
